@@ -1,11 +1,12 @@
 ﻿using System.Web.Mvc;
+using AngularSPA.Interfaces;
+using AngularSPA.Services;
 
 namespace AngularSPA.Controllers
 {
     public class ZooController : Controller
     {
-        //
-        // GET: /Zoo/
+        private IZooService zooService = new ZooService();
 
         public ActionResult Index()
         {
