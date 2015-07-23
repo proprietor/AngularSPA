@@ -10,8 +10,7 @@ namespace AngularSPA.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(zooService.GetZooViewModel());
         }
-
     }
 }

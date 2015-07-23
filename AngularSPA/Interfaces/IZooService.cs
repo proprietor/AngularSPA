@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using AngularSPA.Models;
+using AngularSPA.ViewModels;
 
 namespace AngularSPA.Interfaces
 {
@@ -10,5 +11,7 @@ namespace AngularSPA.Interfaces
         IList<Reptile> GetReptiles();
 
         IList<Insect> GetInsects();
+
+        ZooViewModel GetZooViewModel();
     }
 }
