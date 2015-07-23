@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using AngularSPA.Interfaces;
 using AngularSPA.Services;
 
@@ -10,7 +11,8 @@ namespace AngularSPA.Controllers
 
         public ActionResult Index()
         {
-            return View(zooService.GetZooViewModel());
+            string json = new JavaScriptSerializer().Serialize(zooService.GetZooViewModel());
+            return View(json);
         }
     }
 }
