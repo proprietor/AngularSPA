@@ -1,16 +1,14 @@
-﻿using System.Collections.Generic;
-using AngularSPA.Models;
-using AngularSPA.ViewModels;
+﻿using AngularSPA.ViewModels;
 
 namespace AngularSPA.Interfaces
 {
     interface IZooService
     {
-        IList<Animal> GetAnimals();
+        string GetAnimals();
 
-        IList<Reptile> GetReptiles();
+        string GetReptiles();
 
-        IList<Insect> GetInsects();
+        string GetInsects();
 
         ZooViewModel GetZooViewModel();
     }

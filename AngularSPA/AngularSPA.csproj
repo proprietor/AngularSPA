@@ -148,8 +148,11 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\Zoo\Insects\insects-controller.js" />
+    <Content Include="Scripts\Zoo\Reptiles\reptilesController.js" />
+    <Content Include="Scripts\Zoo\templates\reptiles.html" />
     <Content Include="Scripts\Zoo\templates\animals.html" />
     <Content Include="Scripts\Zoo\Animals\animals-controller.js" />
+    <Content Include="Scripts\Zoo\templates\insects.html" />
     <Content Include="Scripts\Zoo\templates\navbar.html" />
     <Content Include="Scripts\Zoo\zoo-module.js" />
     <Content Include="Web.config" />
@@ -166,7 +169,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\Zoo\Reptiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

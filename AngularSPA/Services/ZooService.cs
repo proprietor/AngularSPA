@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Web.Script.Serialization;
 using AngularSPA.Interfaces;
 using AngularSPA.Models;
 using AngularSPA.ViewModels;
@@ -7,9 +8,11 @@ namespace AngularSPA.Services
 {
     public class ZooService : IZooService
     {
-        public IList<Animal> GetAnimals()
+        private JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
+
+        public string GetAnimals()
         {
-            return new List<Animal>()
+            List<Animal> animals = new List<Animal>()
             {
                 new Animal()
                 {
@@ -17,11 +20,12 @@ namespace AngularSPA.Services
                     Description = "Beautiful",
                 }
             };
+            return javaScriptSerializer.Serialize(animals);
         }
 
-        public IList<Reptile> GetReptiles()
+        public string GetReptiles()
         {
-            return new List<Reptile>()
+            List<Reptile> reptiles = new List<Reptile>()
             {
                 new Reptile()
                 {
@@ -29,11 +33,12 @@ namespace AngularSPA.Services
                     Description = "Very dangerous",
                 }
             };
+            return javaScriptSerializer.Serialize(reptiles);
         }
 
-        public IList<Insect> GetInsects()
+        public string GetInsects()
         {
-            return new List<Insect>()
+            List<Insect> insects = new List<Insect>()
             {
                 new Insect() 
                 {
@@ -41,6 +46,7 @@ namespace AngularSPA.Services
                     Description = "Jumps good",
                 }
             };
+            return javaScriptSerializer.Serialize(insects);
         }
 
         public ZooViewModel GetZooViewModel()

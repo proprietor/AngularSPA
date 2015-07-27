@@ -7,13 +7,17 @@
 <script src="~/Scripts/Zoo/Animals/animals-controller.js"></script>
 <script src="~/Scripts/angular-route.min.js"></script>
 <script src="~/Scripts/Directives/navbar.js"></script>
+<script src="~/Scripts/Zoo/Reptiles/reptilesController.js"></script>
+<script src="~/Scripts/Zoo/Insects/insects-controller.js"></script>
 
-@model string
+@model AngularSPA.ViewModels.ZooViewModel
 
 <script type="text/javascript">
     zooModule.factory("bootstrappedData", function () {
         return {
-            animals: JSON.parse('@Html.Raw(Model)')
+            animals: JSON.parse('@Html.Raw(Model.Aminals)'),
+            insects: JSON.parse('@Html.Raw(Model.Insectors)'),
+            reptiles: JSON.parse('@Html.Raw(Model.Reptiles)')
         };
     });
 </script>

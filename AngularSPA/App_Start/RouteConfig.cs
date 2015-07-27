@@ -17,6 +17,14 @@ namespace AngularSPA
                 url: "Animals",
                 defaults: new {controller = "Zoo", action = "Index"});
 
+            routes.MapRoute(name: "Reptiles",
+                url: "Reptiles",
+                defaults: new { controller = "Zoo", action = "Index" });
+
+            routes.MapRoute(name: "Insects",
+                url: "Insects",
+                defaults: new { controller = "Zoo", action = "Index" });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

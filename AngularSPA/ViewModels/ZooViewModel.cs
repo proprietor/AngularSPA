@@ -1,14 +1,11 @@
-﻿using System.Collections.Generic;
-using AngularSPA.Models;
-
-namespace AngularSPA.ViewModels
+﻿namespace AngularSPA.ViewModels
 {
     public class ZooViewModel
     {
-        public IList<Animal> Aminals { get; set; }
+        public string Aminals { get; set; }
 
-        public IList<Reptile> Reptiles { get; set; }
+        public string Reptiles { get; set; }
 
-        public IList<Insect> Insectors { get; set; } 
+        public string Insectors { get; set; } 
     }
 }
