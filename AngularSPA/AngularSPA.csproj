@@ -139,13 +139,18 @@
     <Content Include="Content\bootstrap.css.map" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Icon.png" />
+    <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Directives\navbar.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\Zoo\Insects\insects-controller.js" />
+    <Content Include="Scripts\Zoo\templates\animals.html" />
     <Content Include="Scripts\Zoo\Animals\animals-controller.js" />
+    <Content Include="Scripts\Zoo\templates\navbar.html" />
     <Content Include="Scripts\Zoo\zoo-module.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -161,7 +166,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\Zoo\Insects\" />
     <Folder Include="Scripts\Zoo\Reptiles\" />
   </ItemGroup>
   <ItemGroup>

@@ -13,6 +13,10 @@ namespace AngularSPA
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute(name: "Animals",
+                url: "Animals",
+                defaults: new {controller = "Zoo", action = "Index"});
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
