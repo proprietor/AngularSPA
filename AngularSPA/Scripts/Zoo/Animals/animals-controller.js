@@ -1,4 +1,3 @@
-﻿zooModule.controller("animalsController", ["$scope", function ($scope) {
-    $scope.firstName = "John";
-    $scope.lastName = "Doe";
+﻿zooModule.controller("animalsController", ["$scope", "bootstrappedData", function ($scope, bootstrappedData) {
+    $scope.animals = bootstrappedData.animals;
 }]);

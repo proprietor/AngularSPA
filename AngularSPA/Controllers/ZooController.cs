@@ -11,8 +11,8 @@ namespace AngularSPA.Controllers
 
         public ActionResult Index()
         {
-            string json = new JavaScriptSerializer().Serialize(zooService.GetZooViewModel());
-            return View(json);
+            string json = new JavaScriptSerializer().Serialize(zooService.GetAnimals());
+            return View("Index", (object)json);
         }
     }
 }
